@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ylg0rLzafIkYW4peLreTBgBVHtMvBos5uaxaX+q4vIuRe6hvkDjRmPkFbLbjNNUmGc1LkVSgRpPEnYPW5PyCKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\felix.campoa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\felix.campoa\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\felix.campoa\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\felix.campoa\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\felix.campoa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\felix.campoa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
