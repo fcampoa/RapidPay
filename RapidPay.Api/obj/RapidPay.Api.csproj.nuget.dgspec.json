@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj": {}
+    "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj": {
+    "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
+        "projectUniqueName": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
         "projectName": "RapidPay.Api",
-        "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
+        "projectPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
         "packagesPath": "C:\\Users\\felix.campoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Api\\obj\\",
+        "outputPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj": {
-                "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj"
+              "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj": {
+                "projectPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj"
               },
-              "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj": {
-                "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj"
+              "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj": {
+                "projectPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj"
               }
             }
           }
@@ -51,6 +51,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -79,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj": {
+    "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj",
         "projectName": "RapidPay.Domain",
-        "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj",
+        "projectPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj",
         "packagesPath": "C:\\Users\\felix.campoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\obj\\",
+        "outputPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -138,14 +142,14 @@
         }
       }
     },
-    "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj": {
+    "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj",
+        "projectUniqueName": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj",
         "projectName": "RapidPay.Services",
-        "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj",
+        "projectPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj",
         "packagesPath": "C:\\Users\\felix.campoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Services\\obj\\",
+        "outputPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,8 +170,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj": {
-                "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj"
+              "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj": {
+                "projectPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj"
               }
             }
           }

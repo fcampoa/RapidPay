@@ -34,3 +34,10 @@ C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\n
 C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\RapidPay.Services.dll
 C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\RapidPay.Services.pdb
 C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\RapidPay.Domain.pdb
+C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\felix.campoa\desktop\net projects\RapidPayment\RapidPay.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
