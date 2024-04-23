@@ -88,6 +88,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "RapidPay.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RapidPay.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RapidPay.Domain.dll": {}
+        }
+      },
+      "RapidPay.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RapidPay.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RapidPay.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RapidPay.Services.dll": {}
+        }
       }
     }
   },
@@ -429,10 +452,22 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "RapidPay.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RapidPay.Domain/RapidPay.Domain.csproj",
+      "msbuildProject": "../RapidPay.Domain/RapidPay.Domain.csproj"
+    },
+    "RapidPay.Services/1.0.0": {
+      "type": "project",
+      "path": "../RapidPay.Services/RapidPay.Services.csproj",
+      "msbuildProject": "../RapidPay.Services/RapidPay.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "RapidPay.Domain >= 1.0.0",
+      "RapidPay.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -443,11 +478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
+      "projectUniqueName": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
       "projectName": "RapidPay.Api",
-      "projectPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
+      "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Api\\RapidPay.Api.csproj",
       "packagesPath": "C:\\Users\\felix.campoa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felix.campoa\\desktop\\net projects\\RapidPayment\\RapidPay.Api\\obj\\",
+      "outputPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -467,7 +502,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj": {
+              "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Domain\\RapidPay.Domain.csproj"
+            },
+            "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj": {
+              "projectPath": "C:\\Users\\felix.campoa\\Desktop\\net projects\\RapidPayment\\RapidPay.Services\\RapidPay.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
