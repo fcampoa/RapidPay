@@ -1,39 +1,62 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using Requests;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
-
+using RapidPay.Services.Services;
+using RapidPay.Domain.Models;
 namespace JwtInDotnetCore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class LoginController : ControllerBase
     {
-        private IConfiguration _config;
-        public LoginController(IConfiguration config) 
+        private readonly IAuthService _authService;
+        private readonly ILogger<LoginController> _logger;
+        // private readonly UserManager<ApplicationUser> _userManager;
+        public LoginController(IAuthService authService, ILogger<LoginController> logger)
         {
-            _config = config;
+            _authService = authService;
+            _logger = logger;
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] LoginRequest loginRequest)
+        public async Task<IActionResult> Post([FromBody] LoginModel model)
         {
-            //your logic for login process
-            //If login usrename and password are correct then proceed to generate token
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest("Invalid payload");
+                var (status, message) = await _authService.Login(model);
+                if (status == 0)
+                    return BadRequest(message);
+                return Ok(message);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+                [HttpPost]
+        [Route("registeration")]
+        public async Task<IActionResult> Register(RegistrationModel model)
+        {
+            try
+            {
+            if (!ModelState.IsValid)
+                return BadRequest("Invalid payload");
+            var (status, message) = await _authService.Registeration(model, UserRoles.User);
+            if (status == 0)
+            {
+                return BadRequest(message);
+            }
+            return CreatedAtAction(nameof(Register), model);
 
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-
-            var Sectoken = new JwtSecurityToken(_config["Jwt:Issuer"],
-              _config["Jwt:Issuer"],
-              null,
-              expires: DateTime.Now.AddMinutes(120),
-              signingCredentials: credentials);
-
-            var token =  new JwtSecurityTokenHandler().WriteToken(Sectoken);
-
-            return Ok(token);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
     }
 }
