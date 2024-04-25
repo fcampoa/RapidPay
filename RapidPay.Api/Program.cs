@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using RapidPay.Domain.Models;
 using RapidPay.Domain.Utilities;
 using RapidPay.Services.Services;
+using Cronos;
 
 var builder = WebApplication.CreateBuilder(args);
 //Jwt configuration ends here
@@ -48,6 +49,7 @@ var Configuration = builder.Configuration;
         builder.Services.AddTransient<IAuthService,AuthService>(); 
         builder.Services.AddSingleton<IRapidPayUnitOfWork, RapidPayUnitOfWork>();
         builder.Services.AddScoped<ICardService, CardService>();
+        builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 var app = builder.Build();
 

@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="Cronos" Version="0.8.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RapidPay.Domain\RapidPay.Domain.csproj" />
   </ItemGroup>
 

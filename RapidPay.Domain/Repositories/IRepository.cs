@@ -10,12 +10,12 @@ namespace RapidPay.Domain.Repositories
 {
     public interface IRepository<T>
     {
-        T Create(T entity);
-        T Update(T entity);
-        void Delete(T entity);
-        List<T> GetAll();
-        T FindById(int id);
-        IEnumerable<T> Filter(Expression<Func<T, bool>> where);
-        T Get(Expression<Func<T, bool>> where);
+        public T Create(T entity);
+        public T Update(T entity);
+        public void Delete(T entity);
+        public List<T> GetAll();
+        public T FindById(int id);
+        public IEnumerable<T> Filter(Expression<Func<T, bool>> where);
+        public T Get(Expression<Func<T, bool>> where);
     }
 }
