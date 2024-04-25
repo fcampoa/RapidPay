@@ -4,28 +4,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using RapidPay.Domain.Models;
+using RapidPay.Domain.Utilities;
 using RapidPay.Services.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
-//Jwt configuration starts here
-// var jwtIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>();
-// var jwtKey = builder.Configuration.GetSection("Jwt:Key").Get<string>();
-
-// builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-//  .AddJwtBearer(options =>
-//  {
-//      options.TokenValidationParameters = new TokenValidationParameters
-//      {
-//          ValidateIssuer = true,
-//          ValidateAudience = true,
-//          ValidateLifetime = true,
-//          ValidateIssuerSigningKey = true,
-//          ValidIssuer = jwtIssuer,
-//          ValidAudience = jwtIssuer,
-//          IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
-//      };
-//  });
 //Jwt configuration ends here
 
 // Add services to the container.
@@ -63,7 +45,9 @@ var Configuration = builder.Configuration;
         .AddEntityFrameworkStores<RapidPayContext>()
         .AddDefaultTokenProviders();
 
-        builder.Services.AddTransient<IAuthService,AuthService>();        
+        builder.Services.AddTransient<IAuthService,AuthService>(); 
+        builder.Services.AddSingleton<IRapidPayUnitOfWork, RapidPayUnitOfWork>();
+        builder.Services.AddScoped<ICardService, CardService>();
 
 var app = builder.Build();
 
